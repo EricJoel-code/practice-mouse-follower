@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-function App() {
+const FollowMouse = () => {
   const [enable, setEnable] = useState(false)
   const [position, setPosition] = useState({ x: 0, y: 0 })
   useEffect(() => {
@@ -43,4 +43,11 @@ function App() {
   )
 }
 
+function App() {
+  return (
+    <main>
+      <FollowMouse />
+    </main>
+  )
+}
 export default App
